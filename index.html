@@ -1,97 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daniela Ispas – Portfolio</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-      line-height: 1.6;
-      color: #333;
-    }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-    h1 {
-      font-size: 2.5em;
-    }
-    h2 {
-      margin-top: 40px;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-  </style>
+  <title>Daniela Ispas | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <header>
+    <h1>Daniela Ispas</h1>
+    <p>Embedded & Software Engineer | Portfolio</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <h1>Daniela Ispas</h1>
-  <p><strong>Computer Engineering Student @ UPT | R&D Software Intern @ Schaeffler | ex-Embedded Intern @ Continental</strong></p>
-
-  <div class="section">
+  <section id="about">
     <h2>About Me</h2>
-    <p>
-      I'm a Computer Engineering student passionate about embedded systems, software automation, and innovation in mobility.  
-      I enjoy working on real-world projects, writing clean code, and contributing to teams that build impactful technology.
-    </p>
-  </div>
+    <p>I am a Computer Engineering student at UPT with a passion for embedded systems, diagnostics, and mobility tech. Currently working at Schaeffler in R&D software, with previous experience in automotive embedded software at Continental.</p>
+  </section>
 
-  <div class="section">
+  <section id="projects">
+    <h2>Highlighted Projects</h2>
+    <div class="project-grid">
+      <div class="card">
+        <h3><a href="https://github.com/danielaX21/API-Security-Implementation" target="_blank">API Security (Go)</a></h3>
+        <p>REST API with JWT authentication and role-based access using Go.</p>
+        <span class="tag go">Go</span>
+      </div>
+      <div class="card">
+        <h3><a href="https://github.com/danielaX21/FileScanner---Malware-Detection-Isolation" target="_blank">FileScanner (Linux)</a></h3>
+        <p>Real-time malware scanning and isolation using Bash, C, and parallel processing.</p>
+        <span class="tag c">C</span>
+      </div>
+      <div class="card">
+        <h3><a href="https://github.com/danielaX21/FileManagement_ClientServer" target="_blank">Client-Server File Manager</a></h3>
+        <p>Multithreaded file manager using POSIX threads, C sockets.</p>
+        <span class="tag c">C</span>
+      </div>
+      <div class="card">
+        <h3><a href="https://github.com/danielaX21/Math-Server-Client-Application" target="_blank">Math Server (Java)</a></h3>
+        <p>Network-based math operations using Java sockets and server-client architecture.</p>
+        <span class="tag java">Java</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
     <h2>Experience</h2>
+    <div class="job">
+      <h3>R&D Software Engineer Intern @ Schaeffler</h3>
+      <p>Jul 2025 – Present</p>
+      <ul>
+        <li>Automation in Python/PowerShell</li>
+        <li>Worked with Jenkins, GitLab CI/CD</li>
+        <li>Collaborated on software integration and testing</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Embedded Intern @ Continental Automotive</h3>
+      <p>Aug 2023 – Jun 2025</p>
+      <ul>
+        <li>Debugged using Lauterbach Trace32, CANoe</li>
+        <li>Developed/tested embedded code with Google Test</li>
+        <li>Owned CAN Diagnostic Description files (CDD)</li>
+      </ul>
+    </div>
+  </section>
 
-    <h3>R&D Software Engineer Intern @ Schaeffler</h3>
-    <p><em>Jul 2025 – Present</em></p>
-    <ul>
-      <li>Contributing to software development for eMobility in the Central Technology division</li>
-      <li>Writing automation scripts in Python and PowerShell</li>
-      <li>Working with CI/CD tools: Jenkins, GitLab</li>
-      <li>Collaborating with cross-functional teams on testing and integration</li>
-    </ul>
-
-    <h3>Embedded Software Developer Intern @ Continental</h3>
-    <p><em>[Start] – [End]</em></p>
-    <ul>
-      <li>Worked on automotive diagnostics and embedded signal processing</li>
-      <li>Used CANoe, CAPL, DaVinci Configurator, CANdela, and AUTOSAR Builder</li>
-      <li>Debugged QAC errors, wrote unit tests, and analyzed CAN logs</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <a href="https://github.com/danielaX21/jwt-auth-go" target="_blank">
-          JWT Auth API in Go
-        </a> – Secure REST API using Go, JWT, and role-based authorization
-      </li>
-    </ul>
-  </div>
-
-  <div class="section">
+  <section id="contact">
     <h2>Contact</h2>
     <ul>
-      <li>Email: <a href="mailto:daniela.ispas@email.com">daniela.ispas@email.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/danielaispas/" target="_blank">linkedin.com/in/danielaispas</a></li>
-      <li>CV: <a href="Daniela_Ispas_CV.pdf" target="_blank">Download PDF</a></li>
+      <li>Email: <a href="mailto:daniela.ispas21@yahoo.com">daniela.ispas21@yahoo.com</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/danielaispas" target="_blank">@danielaispas</a></li>
+      <li>GitHub: <a href="https://github.com/danielaX21" target="_blank">github.com/danielaX21</a></li>
     </ul>
-  </div>
+  </section>
 
+  <footer>
+    <p>© 2025 Daniela Ispas</p>
+  </footer>
 </body>
 </html>
